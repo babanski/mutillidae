@@ -8,9 +8,9 @@ accessible via HTTP, use of weak SSL ciphers, and SSL stripping.
 <br/><br/>
 <span class="report-header">Discovery Methodology</span>
 <br/><br/>
-Use an SSL cipher audit tool such as SSLScan to test cipher strength. Observe 
-how the site handles an HTTP request. If the site redirects the user to 
-HTTPS, the site can be stripped. 
+Use an SSL cipher audit tool such as SSLScan to test cipher strength. Observe
+how the site handles an HTTP request. If the site redirects the user to
+HTTPS, the site can be stripped.
 <br/><br/>
 <span class="report-header">Exploitation</span>
 <br/><br/>
@@ -22,7 +22,7 @@ To test cipher strength, the following tools are helpful
 <span class="label">sslscan</span>
 <br/>
 <code>
-sslscan --targets=hosts.txt	
+sslscan --targets=hosts.txt
 </code>
 <br/>
 <span class="label">NMap</span>
@@ -30,9 +30,23 @@ sslscan --targets=hosts.txt
 <code>
 nmap -p 443 -v -Pn --script=ssl-enum-ciphers --open -iL hosts.txt
 </code>
-<br/>
+<br/><br/>
 <span id="videos" class="report-header">Videos</span>
 <br/><br/>
-<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoTestforWeakSSLTLSHTTPSciphers);?>
-<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->UsingEttercapandSSLstriptoCaptureCredentials);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtocheckHTTPScertificatefromcommandline);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtocheckHTTPSCertificatesforcommonIssues);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->cURLErrorSSLCertificateProblem);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoSetHTTPHeadersUsingApacheServer);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->CheckHTTPHeaderswithcURL);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoCheckHTTPHeadersCommandLine);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoCheckHTTPHeadersfromBrowser);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->WhatisHTTPStrictTransportSecurityHSTS);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->WhatistheHSTSPreloadlist);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->CookiesPart2HowSecureCookiesWork);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->SSLScanPart1HowtotestHTTPS);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->SSLScanPart2HowtoInterprettheResults);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoInstallSSLScanonWindows);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->WhatisCertificateTransparencyPart1);?>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->WhatisCertificateTransparencyPart2ExpectCTHeader);?>
 <br/><br/>
+

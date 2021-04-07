@@ -16,9 +16,9 @@ class YouTubeVideos{
 		 * initialize SQLQuery handler
 		* ------------------------------------------ */
 		$this->mSQLQueryHandler = new SQLQueryHandler($pPathToESAPI, $pSecurityLevel);
-	
+
 	}//end function
-	
+
 	public function getYouTubeVideo($pRecordIdentifier){
 		$lQueryResult = $this->mSQLQueryHandler->getYouTubeVideo($pRecordIdentifier);
 		$lNewYouTubeVideo = new YouTubeVideo();
@@ -32,7 +32,7 @@ class YouTubeVideos{
 class YouTubeVideoHandler {
 
 	const TWO_SECONDS = 2;
-	
+
 	/* private properties */
 	private $mSecurityLevel = 0;
 	private $mYouTubeVideos = null;
@@ -41,138 +41,10 @@ class YouTubeVideoHandler {
 	private $mRemoteFileHandler = null;
 
 	/* public properties */
-	public $InstallingOWASPMutillidaeIIonWindowswithXAMPP = 2;
-	public $InstallingMetasploitable2withMutillidaeonVirtualBox = 3;
-	public $HowtoinstalllatestMutillidaeonSamuraiWTF20 = 4;
-	public $IntroductiontoInstallingConfiguringandUsingBurpSuiteProxy = 5;
-	public $HowtoinstallandconfigureBurpSuitewithFirefox = 6;
-	public $HowtoremovePHPerrorsafterinstallingMutillidaeonWindowsXAMPP = 7;
-	public $BuildingaVirtualLabtoPracticePenTesting = 8;
-	public $HowtoUpgradetotheLatestMutillidaeonSamuraiWTF20 = 9;
-	public $SpideringWebApplicationswithBurpSuite = 10;
-	public $BasicsofBurpSuiteTargetsTab = 11;
-	public $BruteForcePageNamesusingBurpSuiteIntruder = 12;
 	public $UsingBurpIntruderSnipertoFuzzParameters = 13;
-	public $ComparingBurpSuiteIntruderModesSniperBatteringramPitchforkClusterbomb = 14;
-	public $IntroductiontoBurpSuiteComparerTool = 15;
-	public $UsingBurpSuiteSequencertoCompareCSRFtokenstrengths = 16;
-	public $BasicsofWebRequestandResponseInterceptionwithBurpSuite = 17;
-	public $ISSA2013WebPentestingWorkshopPart1IntrotoMutillidaeBurpSuiteInjection = 18;
-	public $OverviewofUsefulPenTestingAddonsforFirefox = 19;
-	public $BypassAuthenticationusingSQLInjection = 20;
-	public $AutomateSQLInjectionusingsqlmap = 21;
-	public $BasicsofSQLInjectionTimingAttacks = 22;
-	public $IntroductiontoUnionBasedSQLInjection = 23;
-	public $BasicsofInsertingDatawithSQLInjection = 24;
-	public $InjectWebShellBackdoorviaSQLInjection = 25;
-	public $BasicsofusingSQLInjectiontoReadFiles = 26;
-	public $GenerateCrossSiteScriptswithSQLInjection = 27;
-	public $SQLInjectionviaAJAXrequestwithJSONresponse = 28;
-	public $BasicsofusingsqlmapISSAKYWorkshopFebruary2013 = 29;
-	public $ExplanationofHTTPOnlyCookiesinPresenceCrossSiteScripting = 30;
-	public $TwoMethodstoStealSessionTokenusingCrossSiteScripting = 31;
-	public $InjectingaCrossSiteScriptviaCascadingStylesheetContext = 32;
-	public $BasicsofInjectingCrossSiteScriptintoHTMLonclickEvent = 33;
-	public $IntroductiontolocatingReflectedCrosssiteScripting = 34;
-	public $SendingPersistentCrosssiteScriptsintoWebLogstoSnagWebAdmin = 35;
-	public $InjectingCrossSiteScriptsXSSintoLogPageviaCookie = 37;
-	public $IntroductiontoHTMLInjectionHTMLiandCrossSiteScriptingXSSUsingMutillidae = 38;
-	public $IntroductiontoCrossSiteScriptingXSSviaJavaScriptStringInjection = 39;
-	public $AddingValuestoDOMStorageusingCrosssiteScripting = 41;
-	public $AlterValuesinHTML5WebStorageusingCrosssiteScript = 42;
-	public $AlterValuesinHTML5WebStorageusingPersistentCrosssiteScript = 43;
-	public $AlterValuesinHTML5WebStorageusingReflectedCrosssiteScript = 44;
-	public $WebPenTestingHTML5WebStorageusingJSONInjection = 45;
-	public $StealingHTML5StorageviaJSONInjection = 46;
-	public $ReadingHiddenValuesfromHTML5DomStorage = 47;
-	public $CommandInjectiontoDumpFilesStartServicesandDisableFirewall = 48;
-	public $HowtoLocatetheEastereggFileusingCommandInjection = 49;
-	public $GainingAdministrativeShellAccessviaCommandInjection = 50;
-	public $UsingCommandInjectiontoGainRemoteDesktop = 51;
-	public $IntroductiontoHTTPParameterPollution = 52;
-	public $UsingHydratoBruteForceWebFormsBasedAuthentication = 53;
-	public $BypassAuthenticationviaAuthenticationTokenManipulation = 55;
-	public $BruteForceAuthenticationusingBurpIntruder = 56;
-	public $AnalyzeSessionTokenRandomnessusingBurpSuiteSequencer = 57;
-	public $DetermineServerBannersusingNetcatNiktoandw3af = 58;
-	public $UsingNmaptoFingerprintHTTPserversandWebApplications = 59;
-	public $FindingCommentsandFileMetadatausingMultipleTechniques = 60;
-	public $HowtoExploitLocalFileInclusionVulnerabilityusingBurpSuite = 61;
-	public $ISSA2013WebPentestingWorkshopPart6LocalRemoteFileInclusion = 62;
-	public $TwoMethodstoBypassJavaScriptValidation = 63;
-	public $XSSbypassingJavaScriptValidation = 64;
-	public $HowtoBypassMaxlengthRestrictionsonHTMLInputFields = 65;
-	public $IntroductiontoCBCBitFlippingAttack = 66;
-	public $UsingEttercapandSSLstriptoCaptureCredentials = 67;
-	public $IntroductiontoXMLExternalEntityInjection = 68;
-	public $DetermineHTTPMethodsusingNetcat = 69;
-	public $ISSAIntroductiontoXMLExternalEntityInjection = 70;
-	public $IntroductiontoUseragentImpersonation = 71;
-	public $IntroductiontoPathRelativeStyleSheetInjection = 72;
-	public $IntroductiontoSQLInjectionforBeginners = 73;
-	public $IntroductiontoSQLInjectionwithSQLMap = 74;
-	public $HowtoSolvetheShowHintsinSecurityLevel5Challenge = 75;
-	public $IntroductiontoPasswordCrackingwithJohntheRipper = 76;
-	public $IntroductiontoFuzzingWebApplicationswithBurpSuiteIntruderTool = 77;
-	public $MutillidaeHowtoShowSecretPageinSecurityLevel5 = 78;
-	public $SolvingPasswordChallengeInMutillidaeWithCommandInjection = 79;
-	public $IntroductiontotheBrowserExploitationFramework= 80;	
-	public $HowtoInstallBurpSuiteonLinux = 81;
-	public $HowtoIdentifyWebTechnologywithWappalyzer = 82;
-	public $HowtoSweepaWebSiteforHTMLComments = 83;
-	public $HowtoUsedirbtoLocateHiddenDirectoriesonaWebSite = 84;
-	public $HowtoInstallOWASPZaponLinux = 85;
-	public $HowtoInstallOWASPDirBusteronLinux = 86;
-	public $HowtouseOWASPDirBustertoDiscoverHiddenDirectoriesonWebSites = 87;
-	public $HowtoInstalldirbonLinux = 88;
-	public $HowtouseWGETtocloneaWebSite = 89;
-	public $HowtoScanWordpressSitesforVulnerabilities = 90;
-	public $CrossSiteScriptingExplainedPart10PathRelativeStylesheetInjection = 91;
-	public $IntroductiontoXPathInjection = 92;
-	public $IntroductiontoUnvalidatedRedirectsandForwards = 93;
-	public $IntroductiontoParameterAddition = 94;
-	public $HowtoTestforWeakSSLTLSHTTPSciphers = 95;
-	public $IntroductiontoMethodTampering = 96;
-	public $IntroductiontoFrameSourceInjection = 97;
-	public $IntroductiontoBurpSuiteRepeaterTool = 98;
 	public $IntroductiontoBurpSuiteIntrudersCharacterFrobberPayload = 99;
 	public $IntroductiontoBurpSuiteIntrudersGrepExtractFeature = 100;
-	public $HowtograbrobotstxtfilewithCURL = 101;
-	public $HowtoInstallandConfigureFoxyProxywithFirefox = 102;
-	public $HowtoSpideraWebSitewithOWASPZAP = 103;
-	public $HowtoProxyWebTrafficthroughOWASPZAP = 104;
-	public $HowtoInterceptHTTPRequestswithOWASPZAP = 105;
-	public $HowtoFuzzWebApplicationswithOWASPZAPPart1 = 106;
-	public $HowtoFuzzWebApplicationswithOWASPZAPPart2 = 107;	
-	public $HowtolistHTTPMethodswithCURL = 108;
-	public $HowtolistHTTPMethodswithNMap = 109;
-	public $HowtograbHTTPServerBannerswithCURL = 110;
-	public $HowtograbHTTPServerBannerswithNMap = 111;
 	public $HowtoInstallBurpSuiteCommunityEditiononLinux = 112;
-	public $OWASPZAPUsingForcedBrowseFeatureFindHiddenDirectories = 113;
-	public $OWASPZAPWebAppVulnerabilityAssessmentPartialSite = 114;
-	public $OWASPZAPAutomatedWebAppVulnerabilityAssessmentEntireSite = 115;
-	public $OWASPZAPWebAppVulnerabilityAssessmentSinglePage = 116;
-	public $HowtoCreateWordlistsfromWebSitesusingCEWL = 117;
-	public $OWASPZAPBreakpointsPart1TrappingHTTPRequests = 118;
-	public $OWASPZAPBreakpointsPart2TrappingSpecificHTTPRequests = 119;
-	public $UsingOWASPZAPwithBurpSuite = 120;
-	public $CommandInjectionExplainedPart1TheBasics = 121;
-	public $CommandInjectionExplainedPart2Discovery = 122;
-	public $CommandInjectionExplainedPart3BlindInjection = 123;
-	public $CommandInjectionExplainedPart4ChainingCommands = 124;
-	public $CommandInjectionExplainedPart5Shell = 125;
-	public $CommandInjectionExplainedPart6DirectoryTraversal = 126;
-	public $SQLInjectionExplainedPart1TheBasics = 127;
-	public $SQLInjectionExplainedPart2Tautologies = 128;
-	public $SQLInjectionExplainedPart3SelectiveInjections = 129;
-	public $SQLInjectionExplainedPart4DiscoverybyError = 130;
-	public $CrossSiteScriptingExplainedPart1TheBasics = 131;
-	public $CrossSiteScriptingExplainedPart2DOMBasedXSS = 132;
-	public $CrossSiteScriptingExplainedPart3ReflectedXSS = 133;
-	public $CrossSiteScriptingExplainedPart4StoredXSS = 134;
-	public $CrossSiteRequestForgeryExplainedPart1BasicCSRF = 135;
-	public $CrossSiteRequestForgeryExplainedPart2AdvancedCSRF = 136;
 	public $HowtoCreateUbuntuVirtualMachineVirtualBox = 137;
 	public $HowtoInstallVirtualBoxGuestAdditionsLinux = 138;
 	public $HowtoCreateUbuntuVirtualMachineVMware = 139;
@@ -187,32 +59,133 @@ class YouTubeVideoHandler {
 	public $HowtoInstallMutillidaeonLinux = 148;
 	public $HowtoCreateSelfSignedCertificateinApache = 149;
 	public $HowtoCreateVirtualHostsinApache = 150;
-	public $IntrotoLDAPInjectionPart1Overview = 151;
-	public $IntrotoLDAPInjectionPart2Discovery = 152;
-	public $IntrotoLDAPInjectionPart3PracticalUsage = 153;
-	public $LFIPart1LocalFileInclusionExplained = 154;
-	public $LFIPart2AccessingLogFiles = 155;
-	public $LFIPart3DirectoryTraversal = 156;
-	public $LFIPart4ServerSideInjectionandLFI = 157;
-	public $LFIPart5CommandShellandLFI = 158;
-	public $LFIPart6BetterCommandShell = 159;
-	public $LFIPart7AlternativePHPShellFunctions = 160;
-	public $LFIPart8ReverseShellviaLFI = 161;
-	
-	
-	
-	
-	
-	
+	public $HowtoremovePHPerrorsafterinstallingMutillidae = 7;
+	public $BurpSuite2HowtoInstallonWindows = 163;
+	public $BurpSuite2HowtoInstallonLinux = 164;
+	public $BurpSuite2CreateShortcutonDesktopLinux = 165;
+	public $BurpSuite2ConfigureFirefoxwithBurpSuite = 166;
+	public $BurpSuite2AddingBurpsCertificatetoFirefox = 167;
+	public $BurpSuite2ConfiguringInterceptFeature = 168;
+	public $BurpSuite2SettingScope = 169;
+	public $BurpSuite2ConfiguringSiteMapandTargets = 170;
+	public $BurpSuite2SiteMapFilters = 171;
+	public $BurpSuite2ProxyHistory = 172;
+	public $BurpSuite2RepeaterTool = 173;
+	public $BurpSuite2IntruderToolSniperMode = 174;
+	public $BurpSuite2IntruderToolBatteringRamMode = 175;
+	public $BurpSuite2IntruderToolPitchforkMode = 176;
+	public $BurpSuite2IntruderToolClusterMode = 177;
+	public $BurpSuite2ComparerTool = 178;
+	public $BurpSuite2DecoderTool = 179;
+	public $BurpSuite2AddingExtentions = 180;
+	public $BurpSuite2ConfiguringUpstreamProxy = 181;
+	public $HowtoInstallJavaonWindows = 182;
+	public $HowtoInstallOWASPZAPonWindows = 183;
+	public $HowtoinstallJavaonLinuxDebianUbuntuKali = 184;
+	public $HowtoInstallOWASPZAPonUbuntu = 185;
+	public $HowtoInstallOWASPZAPonLinux = 186;
+	public $HowtoCreateShortcutforOWASPZAPLinux = 187;
+	public $HowtoInstallandConfigureFoxyProxywithFirefox = 188;
+	public $HowtoProxyWebTrafficthroughOWASPZAP = 189;
+	public $HowtoInterceptHTTPRequestswithOWASPZAP = 190;
+	public $HowtoSpideraWebSitewithOWASPZAP = 191;
+	public $OWASPZAPBreakpointsPart1TrappingHTTPRequests = 192;
+	public $OWASPZAPBreakpointsPart2TrappingSpecificHTTPRequests = 193;
+	public $HowtoFuzzWebApplicationswithOWASPZAPPart1 = 194;
+	public $HowtoFuzzWebApplicationswithOWASPZAPPart2 = 195;
+	public $OWASPZAPWebAppVulnerabilityAssessmentSinglePage = 196;
+	public $OWASPZAPAutomatedWebAppVulnerabilityAssessmentEntireSite = 197;
+	public $OWASPZAPWebAppVulnerabilityAssessmentPartialSite = 198;
+	public $HowtoStartOWASPZAPfromCommandLine = 199;
+	public $ExtendingOWASPZAPwithAddOns = 200;
+	public $UsingOWASPZAPwithBurpSuiteBestofBothWorlds = 201;
+
+	public $HTMLControlsarenotSecurityControls = 202;
+	public $BurpSuite2InspectingWebSockets = 203;
+	public $HowtocheckHTTPScertificatefromcommandline = 204;
+	public $HowtocheckHTTPSCertificatesforcommonIssues = 205;
+	public $cURLErrorSSLCertificateProblem = 206;
+	public $WhatisContentSecurityPolicyPart1 = 207;
+	public $WhatisContentSecurityPolicyPart2 = 208;
+	public $WhatisContentSecurityPolicyPart3 = 209;
+	public $WhatisContentSecurityPolicyPart4 = 210;
+	public $WhatisContentSecurityPolicyPart5 = 211;
+	public $ContentSecurityPolicyScriptSourcescriptsrc = 212;
+	public $ContentSecurityPolicyFrameAncestors = 213;
+	public $WhatareWebServerBanners = 214;
+	public $HowtoSetHTTPHeadersUsingApacheServer = 215;
+	public $CheckHTTPHeaderswithcURL = 216;
+	public $HowCacheControlHeadersWork = 217;
+	public $WhatisHTTPStrictTransportSecurityHSTS = 218;
+	public $WhatistheHSTSPreloadlist = 219;
+	public $CookiesPart1HowHTTPOnlyWorks = 220;
+	public $CookiesPart2HowSecureCookiesWork = 221;
+	public $CookiesPart3HowSameSiteWorks = 222;
+	public $WhatistheXFrameOptionsHeader = 223;
+	public $WhatistheXContentTypeOptionsHeader = 224;
+	public $WhatistheReferrerPolicyHeader = 225;
+	public $WhatistheXSSProtectionHeader = 226;
+	public $SSLScanPart1HowtotestHTTPS = 227;
+	public $SSLScanPart2HowtoInterprettheResults = 228;
+	public $HowtoInstallSSLScanonWindows = 229;
+	public $HowtoinstallJavaonLinuxDebian = 231;
+	public $OutputEncodingPart1HowItStopsCrosssiteScriptingXSS = 234;
+	public $OutputEncodingPart2HowtoTestifitWorks = 235;
+	public $HowCrosssiteRequestForgeryCSRFTokensWork = 236;
+	public $WhatisCORSPart1Explanation = 237;
+	public $WhatisCORSPart2Demonstration = 238;
+	public $CheckforVulnerableLibrariesinYourWebApplication = 239;
+	public $HowtoEnableApacheModHeader = 240;
+	public $WhatisCertificateTransparencyPart1 = 241;
+	public $WhatisCertificateTransparencyPart2ExpectCTHeader = 242;
+	public $HowtoCheckHTTPHeadersCommandLine = 243;
+	public $HowtoCheckHTTPHeadersfromBrowser = 244;
+	public $MutillidaeLab1Walkthrough = 245;
+	public $HowtoInstallWiresharkinWindows10 = 246;
+	public $IntroductiontoNetworkPacketAnalysiswithWireshark = 247;
+	public $IntroductiontoPacketAnalysisPart7CapturingNetworkTrafficwithTCPDumpPart1 = 248;
+	public $IntroductiontoPacketAnalysisPart8CapturingNetworkTrafficwithTCPDumpPart2 = 249;
+	public $IntroductiontoPacketAnalysisPart9PacketAnalysiswithWiresharkPart1 = 250;
+	public $IntroductiontoPacketAnalysisPart10PacketAnalysiswithWiresharkPart2 = 251;
+	public $MutillidaeLab2Walkthrough = 252;
+	public $MutillidaeLab3Walkthrough = 253;
+	public $MutillidaeLab4Walkthrough = 254;
+	public $MutillidaeLab5Walkthrough = 255;
+	public $MutillidaeLab6Walkthrough = 256;
+	public $MutillidaeLab7Walkthrough = 257;
+	public $MutillidaeLab8Walkthrough = 258;
+	public $MutillidaeLab9Walkthrough = 259;
+	public $MutillidaeLab10Walkthrough = 260;
+	public $MutillidaeLab11Walkthrough = 261;
+	public $MutillidaeLab12Walkthrough = 262;
+	public $MutillidaeLab13Walkthrough = 263;
+	public $MutillidaeLab14Walkthrough = 264;
+	public $MutillidaeLab15Walkthrough = 265;
+	public $MutillidaeLab16Walkthrough = 266;
+	public $MutillidaeLab17Walkthrough = 267;
+	public $MutillidaeLab18Walkthrough = 268;
+	public $MutillidaeLab19Walkthrough = 269;
+	public $MutillidaeLab20Walkthrough = 270;
+	public $MutillidaeLab21Walkthrough = 271;
+	public $MutillidaeLab22Walkthrough = 272;
+	public $MutillidaeLab23Walkthrough = 273;
+	public $MutillidaeLab24Walkthrough = 274;
+	public $MutillidaeLab25Walkthrough = 275;
+	public $MutillidaeLab26Walkthrough = 276;
+	public $MutillidaeLab27Walkthrough = 277;
+	public $MutillidaeLab28Walkthrough = 278;
+	public $MutillidaeLab29Walkthrough = 279;
+	public $MutillidaeLab30Walkthrough = 280;
+
 	/* private methods */
 	private function doSetSecurityLevel($pSecurityLevel){
 		$this->mSecurityLevel = $pSecurityLevel;
-	
+
 		switch ($this->mSecurityLevel){
 			case "0": // This code is insecure, we are not encoding output
 			case "1": // This code is insecure, we are not encoding output
 				break;
-	
+
 			case "2":
 			case "3":
 			case "4":
@@ -220,7 +193,7 @@ class YouTubeVideoHandler {
 				break;
 		}// end switch
 	}// end function
-		
+
 	private function fetchVideoPropertiesFromYouTube($pVideoIdentificationToken){
 		$lYouTubeResponse = "";
 
@@ -240,15 +213,15 @@ class YouTubeVideoHandler {
 
 		return $lYouTubeResponse;
 	}// end function fetchVideoPropertiesFromYouTube
-	
+
 	private function getYouTubeIsNotReachableAdvice(){
 		return '<br/><span style="background-color: #ffff99;">Warning: Could not reach YouTube via network connection. Failed to embed video.</span><br/>';
 	}// end function getYouTubeIsNotReachableAdvice
-	
+
 	private function getNoCurlAdviceBasedOnOperatingSystem(){
 		$lOperatingSystemAdvice = "";
 		$lHTML = "";
-		
+
 		switch (PHP_OS){
 			case "Linux":
 				$lOperatingSystemAdvice = "The server operating system seems to be Linux. You may be able to install with sudo apt-get install php[verion]-curl where [version] is the version of PHP installed. For example, apt-get install php7.2-curl if PHP 7.2 is installed.";
@@ -260,7 +233,7 @@ class YouTubeVideoHandler {
 				break;
 			default: $lOperatingSystemAdvice = ""; break;
 		}// end switch
-		
+
 		$lHTML = '<br/><span style="background-color: #ffff99;">Warning: Failed to embed video because PHP Curl is not installed on the server. '.$lOperatingSystemAdvice.'</span><br/>';
 		return $lHTML;
 	}// end function getNoCurlAdviceBasedOnOperatingSystem
@@ -268,7 +241,7 @@ class YouTubeVideoHandler {
 	private function curlIsInstalled(){
 		return function_exists("curl_init");
 	}// end function curlIsInstalled
-	
+
 	private function generateYouTubeFrameHTML($pVideoIdentificationToken){
 		$lRandomNumber = rand(1, 10000000);
 		$lHTML = '
@@ -298,9 +271,9 @@ class YouTubeVideoHandler {
 		}// end if $mCurlIsInstalled
 		return (strlen($lYouTubeResponse) > 0);
 	}// end function isYouTubeReachable()
-	
+
 	/* public methods */
-	
+
 	/* constructor */
 	public function __construct($pPathToESAPI, $pSecurityLevel){
 		$this->doSetSecurityLevel($pSecurityLevel);
@@ -343,7 +316,7 @@ class YouTubeVideoHandler {
 		}//end try
 
 		return $lHTML;
-		
+
 	}// end function getYouTubeVideo
-	
+
 }// end class YouTubeVideoHandler

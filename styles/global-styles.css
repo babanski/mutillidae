@@ -323,6 +323,8 @@ table tr td.form-header{
 	padding-right: 30px;
 	font-size: 18px;
 	border-radius: 5px;
+	word-break: break-word;
+	width: 500px;
 }
 
 /* ------------------------------------------------- */
@@ -602,4 +604,12 @@ div.database-warning-message{
 	font-weight: bold;
 	color: #999900;
 	padding: 3px;	
+}
+
+/* ------------------------------------------------- */
+/* Lab-specific styles							     */
+/* ------------------------------------------------- */
+
+div.lab-links{
+	text-align: center;
 }

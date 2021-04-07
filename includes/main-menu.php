@@ -1,11 +1,11 @@
-<?php 
+<?php
 	$lUserIDString = "";
 	if($_SESSION['loggedin'] == "True"){
 	    $lUserIDString = "&uid=" . $lUserID;
 	} //end if
 ?>
 
-<div id="smoothmenu1" class="ddsmoothmenu">	
+<div id="smoothmenu1" class="ddsmoothmenu">
 	<ul>
 		<li>
 			<a href="">OWASP 2017</a>
@@ -67,7 +67,7 @@
 							<ul>
 								<li><a href="./webservices/rest/ws-user-account.php">User Account Management</a></li>
 							</ul>
-						</li>								
+						</li>
 					</ul>
 				</li>
 				<li>
@@ -79,7 +79,8 @@
 								<li><a href="index.php?page=add-to-your-blog.php">Add to your blog</a></li>
 								<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
 								<li><a href="index.php?page=echo.php">Echo Message</a></li>
-								<li><a href="index.php?page=content-security-policy.php">Content Security Policy (CSP)</a></li>
+								<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+								<li><a href="index.php?page=content-security-policy.php">Echo Message (CSP)</a></li>
 								<li><a href="index.php?page=document-viewer.php&PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document Viewer</a></li>
 								<li><a href="index.php?page=capture-data.php">Capture Data Page</a></li>
 								<li><a href="index.php?page=login.php">Login</a></li>
@@ -109,7 +110,8 @@
 								<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
 								<li><a href="./webservices/soap/ws-lookup-dns-record.php">DNS Lookup (SOAP Web Service)</a></li>
 								<li><a href="index.php?page=echo.php">Echo Message</a></li>
-								<li><a href="index.php?page=content-security-policy.php">Content Security Policy (CSP)</a></li>
+								<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+								<li><a href="index.php?page=content-security-policy.php">Echo Message (CSP)</a></li>
 							</ul>
 						</li>
 						<li>
@@ -126,7 +128,8 @@
 								<li><a href="index.php?page=browser-info.php">Browser Info</a></li>
 								<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
 								<li><a href="index.php?page=echo.php">Echo Message</a></li>
-								<li><a href="index.php?page=content-security-policy.php">Content Security Policy (CSP)</a></li>
+								<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+								<li><a href="index.php?page=content-security-policy.php">Echo Message (CSP)</a></li>
 								<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool Lookup</a></li>
 								<li><a href="index.php?page=text-file-viewer.php">Text File Viewer</a></li>
 								<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
@@ -160,7 +163,7 @@
 								<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a></li>
 								<li><a href="index.php?page=password-generator.php&username=<?php echo $logged_in_user ?>">Password Generator</a></li>
 							</ul>
-						</li>								
+						</li>
 						<li>
 							<a href="">HTMLi Via Cookie Injection</a>
 							<ul>
@@ -199,7 +202,7 @@
 							<a href="">Parameter Addition</a>
 							<ul>
 								<li><a href="index.php?page=repeater.php">Repeater</a></li>
-								<li><a href="index.php?page=view-user-privilege-level.php&iv=6bc24fc1ab650b25b4114e93a98f1eba">View User Privileges</a></li>								
+								<li><a href="index.php?page=view-user-privilege-level.php&iv=6bc24fc1ab650b25b4114e93a98f1eba">View User Privileges</a></li>
 							</ul>
 						</li>
 						<li>
@@ -247,7 +250,7 @@
 								<li><a href="index.php?page=login.php">Login</a></li>
 								<li><a href="index.php?page=edit-account-profile.php<?php echo $lUserIDString; ?>">Via Account Hijacking</a></li>
 								<li><a href="index.php?page=view-user-privilege-level.php&iv=6bc24fc1ab650b25b4114e93a98f1eba">Via CBC-bit Flipping</a></li>
-							</ul>								
+							</ul>
 						</li>
 						<li><a href="">Username Enumeration</a>
 							<ul>
@@ -256,7 +259,13 @@
 								<li><a href="./webservices/soap/ws-user-account.php">Lookup User (SOAP Web Service)</a></li>
 								<li><a href="./webservices/rest/ws-user-account.php">User Account Management (REST Web Service)</a></li>
 							</ul>
-						</li>							
+						</li>
+        				<li>
+        					<a href="">JSON Web Token (JWT)</a>
+        					<ul>
+        						<li><a href="index.php?page=jwt.php">Current User Information</a></li>
+        					</ul>
+        				</li>
 					</ul>
 				</li>
 				<li>
@@ -274,12 +283,12 @@
 								<li><a href="index.php?page=client-side-comments.php">HTML/JavaScript Comments</a></li>
 								<li><a href="index.php?page=cache-control.php">Cache-Control</a></li>
 								<li><a href="index.php?page=framing.php">Click-Jacking</a></li>
-								<li><a href="framer.html">Cross-Site Framing (Third-Party Framing)</a></li>
+								<li><a href="framer.html">Cross-Site Framing</a></li>
 								<li><a href="index.php?page=framing.php">X-Frame-Options (Click-Jacking)</a></li>
 								<li><a href="framer.html">X-Frame-Options (Cross-frame Scripting)</a></li>
 							</ul>
 						</li>
-						
+
 						<li>
 							<a href="">Application Path Disclosure</a>
 							<ul>
@@ -296,6 +305,12 @@
 							</ul>
 						</li>
 						<li><a href="index.php?page=ssl-misconfiguration.php">SSL Misconfiguration</a></li>
+        				<li>
+        					<a href="">JSON Web Token (JWT)</a>
+        					<ul>
+        						<li><a href="index.php?page=jwt.php">Current User Information</a></li>
+        					</ul>
+        				</li>
 					</ul>
 				</li>
 				<li>
@@ -320,7 +335,7 @@
 								<li><a href="index.php?page=arbitrary-file-inclusion.php">Remote File Inclusion</a></li>
 								<li><a href="index.php?page=text-file-viewer.php">Text File Viewer</a></li>
 								<li><a href="index.php?page=source-viewer.php">Source Viewer</a></li>
-								<li><a href="index.php?page=credits.php">Credits</a></li>							
+								<li><a href="index.php?page=credits.php">Credits</a></li>
 							</ul>
 						</li>
 						<li>
@@ -332,6 +347,12 @@
 								<li><a href="index.php?page=robots-txt.php">Robots.txt</a></li>
 							</ul>
 						</li>
+        				<li>
+        					<a href="">JSON Web Token (JWT)</a>
+        					<ul>
+        						<li><a href="index.php?page=jwt.php">Current User Information</a></li>
+        					</ul>
+        				</li>
 					</ul>
 				</li>
 				<li>
@@ -347,7 +368,17 @@
 								<li><a href="index.php?page=user-poll.php">Poll Question</a></li>
 								<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
 								<li><a href="index.php?page=echo.php">Echo Message</a></li>
-								<li><a href="index.php?page=content-security-policy.php">Content Security Policy (CSP)</a></li>
+								<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+								<li><a href="index.php?page=content-security-policy.php">Echo Message (CSP)</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="">HTTP Headers</a>
+							<ul>
+        						<li><a href="index.php?page=cache-control.php">Cache-Control</a></li>
+        						<li><a href="index.php?page=framing.php">Click-Jacking</a></li>
+        						<li><a href="framer.html">Cross-Site Framing (Third-Party Framing)</a></li>
 							</ul>
 						</li>
 						<li><a href="index.php?page=user-agent-impersonation.php">User-Agent Impersonation</a></li>
@@ -356,9 +387,6 @@
 						<li><a href="index.php?page=phpmyadmin.php">PHP MyAdmin Console</a></li>
 						<li><a href="index.php?page=phpinfo.php">PHP Info Page</a></li>
 						<li><a href="index.php?page=robots-txt.php">Robots.txt</a></li>
-						<li><a href="index.php?page=cache-control.php">Cache-Control</a></li>
-						<li><a href="index.php?page=framing.php">Click-Jacking</a></li>
-						<li><a href="framer.html">Cross-Site Framing (Third-Party Framing)</a></li>
 					</ul>
 				</li>
 				<li>
@@ -369,7 +397,8 @@
 							<ul>
 								<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
 								<li><a href="index.php?page=echo.php">Echo Message</a></li>
-								<li><a href="index.php?page=content-security-policy.php">Content Security Policy (CSP)</a></li>
+								<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+								<li><a href="index.php?page=content-security-policy.php">Echo Message (CSP)</a></li>
 								<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool Lookup</a></li>
 								<li><a href="index.php?page=text-file-viewer.php">Text File Viewer</a></li>
 								<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
@@ -379,7 +408,7 @@
 								<li><a href="index.php?page=document-viewer.php&PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document Viewer</a></li>
 								<li><a href="index.php?page=arbitrary-file-inclusion.php">Arbitrary File Inclusion</a></li>
 								<li><a href="index.php?page=xml-validator.php">XML Validator</a></li>
-								<li><a href="index.php?page=user-info-xpath.php">User Info (XPath)</a></li>	
+								<li><a href="index.php?page=user-info-xpath.php">User Info (XPath)</a></li>
 								<li><a href="index.php?page=user-poll.php">Poll Question</a></li>
 								<li><a href="index.php?page=register.php">Register User</a></li>
 								<li><a href="index.php?page=browser-info.php">Browser Info</a></li>
@@ -405,7 +434,7 @@
 								<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a></li>
 								<li><a href="index.php?page=password-generator.php&username=<?php echo $logged_in_user ?>">Password Generator</a></li>
 							</ul>
-						</li>								
+						</li>
 						<li>
             				<a href="" target="_blank">Cross Site Request Forgery (CSRF)</a>
             				<ul>
@@ -423,7 +452,8 @@
 								<li><a href="index.php?page=text-file-viewer.php">Text File Viewer</a></li>
 								<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
 								<li><a href="index.php?page=echo.php">Echo Message</a></li>
-								<li><a href="index.php?page=content-security-policy.php">Content Security Policy (CSP)</a></li>
+								<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+								<li><a href="index.php?page=content-security-policy.php">Echo Message (CSP)</a></li>
 								<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
 								<li><a href="index.php?page=user-info-xpath.php">User Info (XPath)</a></li>
 								<li><a href="index.php">Missing HTTPOnly Attribute</a></li>
@@ -445,8 +475,8 @@
 							<a href="">Via HTTP Attribute</a>
 							<ul>
 								<li><a href="index.php?page=document-viewer.php&PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document Viewer</a></li>
-							</ul>								
-						</li>								
+							</ul>
+						</li>
 						<li>
 							<a href="">Via Misconfiguration</a>
 							<ul>
@@ -482,7 +512,7 @@
 							<ul>
 								<li><a href="index.php?page=user-info-xpath.php">User Info (XPath)</a></li>
 							</ul>
-						</li>						
+						</li>
 						<li>
 							<a href="">Via Path Relative Style Sheet Injection</a>
 							<ul>
@@ -497,7 +527,8 @@
 								<li><a href="index.php?page=show-log.php">Show Log</a><li>
 								<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
 								<li><a href="index.php?page=echo.php">Echo Message</a></li>
-								<li><a href="index.php?page=content-security-policy.php">Content Security Policy (CSP)</a></li>
+								<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+								<li><a href="index.php?page=content-security-policy.php">Echo Message (CSP)</a></li>
 								<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool Lookup</a></li>
 								<li><a href="index.php?page=text-file-viewer.php">Text File Viewer</a></li>
 								<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
@@ -549,14 +580,14 @@
 					<a href="">A10 - Unvalidated Redirects and Forwards</a>
 					<ul>
 						<li><a href="?page=credits.php">Credits</a></li>
-						<?php if (isset($_COOKIE["uid"]) && $_COOKIE["uid"]==1) { ?>		
+						<?php if (isset($_COOKIE["uid"]) && $_COOKIE["uid"]==1) { ?>
 						<li><a href="set-up-database.php">Setup/reset the DB</a></li>
 						<?php } else { ?>
 						<li><a href="">Setup/reset the DB (Disabled: Not Admin)</a></li>
-						<?php }; ?>		
+						<?php }; ?>
 					</ul>
-				</li>				
-			</ul>			
+				</li>
+			</ul>
 		</li>
 	</ul>
 	<ul>
@@ -581,7 +612,7 @@
 						<li><a href="index.php?page=secret-administrative-pages.php">"Secret" Administrative Pages</a></li>
 						<li><a href="index.php?page=robots-txt.php">Robots.txt</a></li>
 						<li><a href="index.php?page=arbitrary-file-inclusion.php">Arbitrary File Inclusion</a></li>
-						<li><a href="index.php?page=phpinfo.php">PHP Info Page</a></li>					
+						<li><a href="index.php?page=phpinfo.php">PHP Info Page</a></li>
 					</ul>
 				</li>
 				<li>
@@ -595,7 +626,7 @@
 				</li>
 			</ul>
 		</li>
-	</ul>	
+	</ul>
 	<ul>
 		<li>
 			<a href="">OWASP 2007</a>
@@ -605,7 +636,7 @@
 					<ul>
 						<li><a href="index.php?page=text-file-viewer.php">Text File Viewer</a></li>
 						<li><a href="index.php?page=source-viewer.php">Source Viewer</a></li>
-					</ul>		
+					</ul>
 				</li>
 				<li>
 					<a href="">A6 - Information Leakage</a>
@@ -621,7 +652,7 @@
 						<li><a href="index.php?page=phpinfo.php">PHP Info Page</a></li>
 						<li><a href="index.php?page=robots-txt.php">Robots.txt</a></li>
 						<li><a href="index.php?page=ssl-misconfiguration.php">SSL Misconfiguration</a></li>
-					</ul>		
+					</ul>
 				</li>
 				<li>
 					<a href="">A6 - Improper Error Handling</a>
@@ -634,11 +665,11 @@
 						<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool Lookup</a></li>
 						<li><a href="index.php?page=pen-test-tool-lookup-ajax.php">Pen Test Tool Lookup (AJAX)</a></li>
 						<li><a href="./webservices/soap/ws-user-account.php">Lookup User (SOAP Web Service)</a></li>
-					</ul>		
+					</ul>
 				</li>
 			</ul>
 		</li>
-	</ul>	
+	</ul>
 	<ul>
 		<li>
 			<a href="">Web Services</a>
@@ -688,36 +719,12 @@
 							</ul>
 						</li>
 					</ul>
-				</li>						
-			</ul>
-		</li>
-		<li>
-			<a href="">HTML 5</a>
-			<ul>
-				<li>
-					<a href="">HTML 5 Web Storage</a>
-					<ul>
-						<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="">JavaScript Object Notation (JSON)</a>
-					<ul>
-						<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool Lookup</a></li>
-						<li><a href="index.php?page=pen-test-tool-lookup-ajax.php">Pen Test Tool Lookup (AJAX)</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="">Asyncronous JavaScript and XML (AJAX)</a>
-					<ul>
-						<li><a href="index.php?page=pen-test-tool-lookup-ajax.php">Pen Test Tool Lookup (AJAX)</a></li>
-					</ul>
 				</li>
 			</ul>
 		</li>
 		<li>
 			<a href="">Others</a>
-			<ul>			
+			<ul>
 				<li>
 					<a href="">Client-side "Security" Controls</a>
 					<ul>
@@ -725,9 +732,10 @@
 					</ul>
 				</li>
 				<li>
-					<a href="">Cross-Frame Framing (Third-party Framing)</a>
+					<a href="">Cross-Site Framing</a>
 					<ul>
-						<li><a href="index.php?page=framer.html">Framer</a></li>
+   						<li><a href="index.php?page=framing.php">Click-Jacking</a></li>
+  						<li><a href="framer.html">Cross-Site Framing (Third-Party Framing)</a></li>
 					</ul>
 				</li>
 				<li>
@@ -741,7 +749,7 @@
 					<ul>
 						<li><a href="?page=text-file-viewer.php">Text File Viewer</a></li>
 						<li><a href="?page=show-log.php">Show Web Log</a><li>
-					</ul>		
+					</ul>
 				</li>
 				<li>
 					<a href="">JavaScript Validation Bypass</a>
@@ -753,9 +761,10 @@
 						<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a></li>
 						<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
 						<li><a href="index.php?page=echo.php">Echo Message</a></li>
-						<li><a href="index.php?page=content-security-policy.php">Content Security Policy (CSP)</a></li>
+						<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+						<li><a href="index.php?page=content-security-policy.php">Echo Message (CSP)</a></li>
 						<li><a href="index.php?page=repeater.php">Repeater</a></li>
-					</ul>		
+					</ul>
 				</li>
 				<li>
 					<a href="index.php?page=user-agent-impersonation.php">User-Agent Impersonation</a>
@@ -765,7 +774,34 @@
 					<ul>
 						<li><a href="index.php?page=capture-data.php">Data Capture</a></li>
 						<li><a href="index.php?page=captured-data.php">View Captured Data</a></li>
-					</ul>		
+					</ul>
+				</li>
+				<li>
+					<a href="">JSON Web Token (JWT)</a>
+					<ul>
+						<li><a href="index.php?page=jwt.php">Current User Information</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="">Labs</a>
+			<ul>
+				<li>
+					<a href="">How the Web Works</a>
+					<ul>
+						<li><a href="index.php?page=labs/lab-1.php">Lab 1 - Sending HTTP Requests with Netcat</a></li>
+						<li><a href="index.php?page=labs/lab-2.php">Lab 2 - Capturing HTTP Packets with Wireshark</a></li>
+						<li><a href="index.php?page=labs/lab-3.php">Lab 3 - Intercepting HTTP Requests and Responses</a></li>
+						<li><a href="index.php?page=labs/lab-4.php">Lab 4 - Using Burp-Suite Proxy History</a></li>
+						<li><a href="index.php?page=labs/lab-5.php">Lab 5 - Bypassing Client-side Security</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">SQL Injection</a>
+					<ul>
+						<li><a href="index.php?page=labs/lab-6.php">Lab 6 - Testing for SQL Errors</a></li>
+					</ul>
 				</li>
 			</ul>
 		</li>
